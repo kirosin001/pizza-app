@@ -1,0 +1,84 @@
+.head {
+  position: relative;
+  min-height: 165px;
+  border-radius: 19px;
+}
+.product-card {
+  background: var(--white-color);
+  box-shadow: 18.21px 18.21px 36.43px 0px rgba(211, 209, 216, 0.25);
+  width: 320px;
+}
+
+.footer {
+  padding: 12px;
+}
+
+.title {
+  color: var(--text-color);
+  font-size: 18.21px;
+  font-weight: 600;
+  line-height: normal;
+  font-style: normal;
+}
+.description {
+  color: var(--text-secondary-color);
+  font-size: 14.57px;
+  font-weight: 400;
+  line-height: normal;
+  font-style: normal;
+}
+.price {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  background: var(--white-color);
+  padding: 3px 10px;
+  border-radius: 20px;
+  color:#111719;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  font-style: normal;
+
+}
+.rubl {
+    color: var(--primary-color);
+}
+.rating {
+    position: absolute;
+    left: 15px;
+    bottom: -12px;
+    background: var(--white-color);
+    padding: 3px 8px;
+    border-radius: 20px;
+    color:#111719;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: normal;
+    font-style: normal;
+    box-shadow: 0px 6.07px 24.29px 0px rgba(254, 114, 76, 0.2);
+  }
+
+  .add-to-card {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .add-to-card img {
+    margin-left: -3px;
+  }
+  .add-to-card:hover {
+    background: var(--primary-hover-color);
+
+  }
+  .link {
+  text-decoration: none;
+
+  }
