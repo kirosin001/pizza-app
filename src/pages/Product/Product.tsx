@@ -1,8 +1,23 @@
-import { useParams } from "react-router-dom";
+import { Await, useLoaderData } from "react-router-dom";
+import { Product } from "../../interfaces/product.interface";
+import { Suspense } from "react";
 
 export function Product() {
-const {id} = useParams()
-
-    return <>Product - {id}</>;
-  }
+const data = useLoaderData() as Product 
+return (
+<>
+<Suspense fallback={'Загружаю...'}>
+  <Await
+    resolve={data}
+    errorElement={<div>Не можем отобразить продукт😬</div>}
+  >
+    {(resolvedData: Product) => (
+      <div>Product Name: {resolvedData.name}</div>
+    )}
+  </Await>
+</Suspense>
+</>
+ );
+}
+  
   
